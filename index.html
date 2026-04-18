@@ -12,8 +12,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/password.css">
 </head>
 <body>
+    <div id="password-overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="password-title">
+        <div class="password-card">
+            <h2 id="password-title">Open to celebrate</h2>
+            <p class="password-copy">Enter the password to open Mom's birthday scrapbook.</p>
+            <form id="password-form">
+                <label class="sr-only" for="password-input">Password</label>
+                <input id="password-input" name="password" type="password" autocomplete="current-password" required>
+                <button id="submit-password" type="submit">Open Scrapbook</button>
+                <p id="error-message" class="error-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
 
     <header class="hero" data-aos="fade-down">
         <h1 class="hero-title">Happy Birthday, Mom! ❤️</h1>
@@ -30,8 +43,6 @@
 
     <!-- Dependencies -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <!-- Custom Logic -->
     <script src="js/main.js"></script>
 </body>

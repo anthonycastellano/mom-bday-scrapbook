@@ -1,10 +1,49 @@
 // Configuration and State
 const DATA_URL = 'data.json';
+const PASSWORD_HASH = 'c0182b5e5c31b6f27d32a0129f78d88aa4840781e5e421bcc915b97d91f40d60';
+const AUTH_STORAGE_KEY = 'mom-bday-authenticated';
 
 // Initialize Page
 document.addEventListener('DOMContentLoaded', () => {
-    initApp();
+    initPasswordGate();
 });
+
+async function initPasswordGate() {
+    if (sessionStorage.getItem(AUTH_STORAGE_KEY) === 'true') {
+        unlockSite();
+        await initApp();
+        return;
+    }
+
+    const form = document.getElementById('password-form');
+    const input = document.getElementById('password-input');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const password = input.value;
+        const passwordHash = await sha256Hex(password);
+
+        if (passwordHash === PASSWORD_HASH) {
+            sessionStorage.setItem(AUTH_STORAGE_KEY, 'true');
+            errorMessage.textContent = '';
+            unlockSite();
+            await initApp();
+            return;
+        }
+
+        errorMessage.textContent = 'Incorrect password.';
+        input.select();
+    });
+
+    input.focus();
+}
+
+function unlockSite() {
+    const overlay = document.getElementById('password-overlay');
+    overlay.classList.add('is-hidden');
+}
 
 async function initApp() {
     try {
@@ -40,19 +79,6 @@ function renderScrapbook(items) {
         const element = createScrapbookElement(item);
         container.appendChild(element);
     });
-
-    // Initialize Masonry after images are loaded
-    const grid = container.querySelector('.masonry-grid');
-    imagesLoaded(grid, function() {
-        new Masonry(grid, {
-            itemSelector: '.scrapbook-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true,
-            masonry: {
-                columnWidth: '.grid-sizer'
-            }
-        });
-    });
 }
 
 function createScrapbookElement(item) {
@@ -82,6 +108,14 @@ function createScrapbookElement(item) {
     }
 
     return div;
+}
+
+async function sha256Hex(value) {
+    const encoded = new TextEncoder().encode(value);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', encoded);
+    return Array.from(new Uint8Array(hashBuffer))
+        .map(byte => byte.toString(16).padStart(2, '0'))
+        .join('');
 }
 
 function formatDate(dateString) {

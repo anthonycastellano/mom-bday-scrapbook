@@ -47,29 +47,12 @@ body {
 /* Grid Layout */
 .masonry-grid {
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
+    width: min(100%, 30rem);
+    padding: 0 16px;
 }
 
-/* Grid Sizer for Masonry */
-.grid-sizer, .masonry-item {
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .grid-sizer, .masonry-item {
-        width: 48%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .grid-sizer, .masonry-item {
-        width: 31%;
-    }
-}
-
-/* Card Styling */
 .scrapbook-item {
+    width: 100%;
     margin-bottom: 20px;
 }
 
