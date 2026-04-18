@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #ff85a2;
+    --secondary-color: #fce4ec;
+    --text-color: #4a4a4a;
+    --accent-color: #ff4d6d;
+    --bg-color: #fff5f7;
+    --card-bg: #ffffff;
+    --font-main: 'Inter', sans-serif;
+    --font-accent: 'Dancing Script', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff85a2 0%, #ff4d6d 100%);
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-title {
+    font-family: var(--font-accent);
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Grid Layout */
+.masonry-grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Grid Sizer for Masonry */
+.grid-sizer, .masonry-item {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .grid-sizer, .masonry-item {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-sizer, .masonry-item {
+        width: 31%;
+    }
+}
+
+/* Card Styling */
+.scrapbook-item {
+    margin-bottom: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 8px solid white;
+}
+
+.card:hover {
+    transform: translateY(-5px) rotate(1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.note-card {
+    padding: 30px 20px;
+    background: #fff9fa;
+    text-align: center;
+    border: 4px dashed var(--primary-color);
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.caption, .note-text {
+    font-family: var(--font-accent);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.note-text {
+    font-family: var(--font-main);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.date {
+    display: block;
+    font-size: 0.8rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+    font-size: 0.9rem;
+}

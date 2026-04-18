@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "type": "photo",
+    "url": "assets/images/placeholder1.jpg",
+    "caption": "A beautiful memory ✨",
+    "date": "2023-05-20"
+  },
+  {
+    "id": 2,
+    "type": "note",
+    "content": "You are the heart of our family. ❤️",
+    "date": "2024-01-01"
+  },
+  {
+    "id": 3,
+    "type": "photo",
+    "url": "assets/images/placeholder2.jpg",
+    "caption": "Summer adventures ☀️",
+    "date": "2023-07-15"
+  },
+  {
+    "id": 4,
+    "type": "note",
+    "content": "Always grateful for your love and wisdom.",
+    "date": "2024-02-14"
+  }
+]
