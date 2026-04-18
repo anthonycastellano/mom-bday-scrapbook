@@ -136,6 +136,18 @@
     "caption": "A beautiful portrait from your younger years. 💕"
   },
   {
+    "id": 31,
+    "type": "photo",
+    "url": "assets/images/mom-and-michael-lakeside.png",
+    "caption": "Mom and Michael by the water. 💙"
+  },
+  {
+    "id": 32,
+    "type": "photo",
+    "url": "assets/images/mom-relaxing-at-pool.png",
+    "caption": "Mom relaxing at the pool and soaking up the day. ☀️"
+  },
+  {
     "id": 6,
     "type": "note",
     "content": "You are the heart of our family. ❤️"
