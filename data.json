@@ -112,15 +112,72 @@
     "date": "2019-10-31"
   },
   {
+    "id": 20,
+    "type": "photo",
+    "url": "assets/images/family-playing-at-shore.jpeg",
+    "caption": "One of those beach moments that turned into total chaos and laughter. 🌊"
+  },
+  {
+    "id": 21,
+    "type": "photo",
+    "url": "assets/images/mom-and-anthony-beach-selfie.jpg",
+    "caption": "A goofy beach selfie that feels exactly like us. 😄"
+  },
+  {
+    "id": 22,
+    "type": "photo",
+    "url": "assets/images/mom-and-anthony-waterfront-selfie.jpeg",
+    "caption": "Golden-hour calm with Dad by the water. ☀️"
+  },
+  {
+    "id": 23,
+    "type": "photo",
+    "url": "assets/images/young-mom-portrait.jpeg",
+    "caption": "A beautiful portrait from your younger years. 💕"
+  },
+  {
     "id": 6,
     "type": "note",
-    "content": "You are the heart of our family. ❤️ - Anthony",
-    "date": "2024-01-01"
+    "content": "You are the heart of our family. ❤️"
   },
   {
     "id": 7,
     "type": "note",
-    "content": "Always grateful for your love and wisdom.",
-    "date": "2024-02-14"
+    "content": "Always grateful for your love and wisdom."
+  },
+  {
+    "id": 24,
+    "type": "note",
+    "content": "Your love has shaped every good part of this family."
+  },
+  {
+    "id": 25,
+    "type": "note",
+    "content": "You make ordinary days feel warm, safe, and full of love."
+  },
+  {
+    "id": 26,
+    "type": "note",
+    "content": "Thank you for the constant care, patience, and strength you give all of us."
+  },
+  {
+    "id": 27,
+    "type": "note",
+    "content": "You have a way of making everyone around you feel deeply loved."
+  },
+  {
+    "id": 28,
+    "type": "note",
+    "content": "So many of our best memories are special because you were at the center of them."
+  },
+  {
+    "id": 29,
+    "type": "note",
+    "content": "Your kindness, humor, and steady love mean more than words can say."
+  },
+  {
+    "id": 30,
+    "type": "note",
+    "content": "Home has always felt like home because of you."
   }
 ]

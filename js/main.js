@@ -85,6 +85,7 @@ function createScrapbookElement(item) {
     const div = document.createElement('div');
     div.className = 'scrapbook-item';
     div.setAttribute('data-aos', 'fade-up');
+    const dateMarkup = item.date ? `<span class="date">${formatDate(item.date)}</span>` : '';
 
     if (item.type === 'photo') {
         div.innerHTML = `
@@ -92,7 +93,7 @@ function createScrapbookElement(item) {
                 <img src="${item.url}" alt="${item.caption}" onerror="this.style.display='none'">
                 <div class="card-content">
                     <p class="caption">${item.caption}</p>
-                    <span class="date">${formatDate(item.date)}</span>
+                    ${dateMarkup}
                 </div>
             </div>
         `;
@@ -101,7 +102,7 @@ function createScrapbookElement(item) {
             <div class="card note-card">
                 <div class="card-content">
                     <p class="note-text">"${item.content}"</p>
-                    <span class="date">${formatDate(item.date)}</span>
+                    ${dateMarkup}
                 </div>
             </div>
         `;
@@ -119,6 +120,9 @@ async function sha256Hex(value) {
 }
 
 function formatDate(dateString) {
+    if (!dateString) {
+        return '';
+    }
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString(undefined, options);
 }
