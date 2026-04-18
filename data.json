@@ -28,6 +28,90 @@
     "date": "2024-04-01"
   },
   {
+    "id": 8,
+    "type": "photo",
+    "url": "assets/images/winter-family-outside.jpeg",
+    "caption": "Bundled up together on a snowy night. ❄️",
+    "date": "2021-12-24"
+  },
+  {
+    "id": 9,
+    "type": "photo",
+    "url": "assets/images/family-kitchen-selfie.jpeg",
+    "caption": "Kitchen selfie with plenty of laughs. 🍽️",
+    "date": "2022-05-08"
+  },
+  {
+    "id": 10,
+    "type": "photo",
+    "url": "assets/images/mom-and-anthony-kitchen-hug.jpg",
+    "caption": "A warm kitchen hug with Anthony. ❤️",
+    "date": "2018-03-18"
+  },
+  {
+    "id": 11,
+    "type": "photo",
+    "url": "assets/images/family-sunset-waterfront.jpeg",
+    "caption": "Sunset by the water with the whole crew. 🌅",
+    "date": "2023-08-08"
+  },
+  {
+    "id": 12,
+    "type": "photo",
+    "url": "assets/images/beach-family-portrait.jpg",
+    "caption": "A bright beach portrait from the earlier years. ☀️",
+    "date": "2016-08-24"
+  },
+  {
+    "id": 13,
+    "type": "photo",
+    "url": "assets/images/mom-with-boys-at-night.jpeg",
+    "caption": "Late-night beach memories with the boys. 🌙",
+    "date": "2015-12-02"
+  },
+  {
+    "id": 14,
+    "type": "photo",
+    "url": "assets/images/mom-with-boys-on-porch.jpeg",
+    "caption": "A quick porch photo before heading out. 🍂",
+    "date": "2022-10-01"
+  },
+  {
+    "id": 15,
+    "type": "photo",
+    "url": "assets/images/lacrosse-senior-night-family.jpg",
+    "caption": "Senior night pride on the lacrosse field. 🥍",
+    "date": "2017-05-09"
+  },
+  {
+    "id": 16,
+    "type": "photo",
+    "url": "assets/images/family-dressed-up-doorway.jpeg",
+    "caption": "Dressed up and ready for a special night. ✨",
+    "date": "2021-10-16"
+  },
+  {
+    "id": 17,
+    "type": "photo",
+    "url": "assets/images/mom-and-anthony-gamecocks-day.jpg",
+    "caption": "Gamecocks gear and a sunny day together. 🐔",
+    "date": "2017-10-06"
+  },
+  {
+    "id": 18,
+    "type": "photo",
+    "url": "assets/images/parents-with-young-boys.jpg",
+    "caption": "Back when the boys were still little. 🏖️",
+    "date": "2017-10-30"
+  },
+  {
+    "id": 19,
+    "type": "photo",
+    "url": "assets/images/pumpkin-carving-family.jpeg",
+    "caption": "Pumpkin carving at the kitchen table. 🎃",
+    "date": "2019-10-31"
+  },
+  {
     "id": 6,
     "type": "note",
     "content": "You are the heart of our family. ❤️ - Anthony",
