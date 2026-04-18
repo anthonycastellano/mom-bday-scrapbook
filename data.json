@@ -2,25 +2,39 @@
   {
     "id": 1,
     "type": "photo",
-    "url": "assets/images/placeholder1.jpg",
-    "caption": "A beautiful memory ✨",
+    "url": "assets/images/anthony-and-mom.jpeg",
+    "caption": "Anthony and Mom ❤️",
     "date": "2023-05-20"
-  },
-  {
-    "id": 2,
-    "type": "note",
-    "content": "You are the heart of our family. ❤️",
-    "date": "2024-01-01"
   },
   {
     "id": 3,
     "type": "photo",
-    "url": "assets/images/placeholder2.jpg",
-    "caption": "Summer adventures ☀️",
-    "date": "2023-07-15"
+    "url": "assets/images/family-at-home.jpeg",
+    "caption": "Cozy moments at home 🏠",
+    "date": "2023-12-25"
   },
   {
     "id": 4,
+    "type": "photo",
+    "url": "assets/images/family-with-brynna.jpeg",
+    "caption": "Sweet memories with Brynna 🌸",
+    "date": "2024-02-14"
+  },
+  {
+    "id": 5,
+    "type": "photo",
+    "url": "assets/images/full-family.jpeg",
+    "caption": "The whole family together! 👨‍👩‍👧‍👦",
+    "date": "2024-04-01"
+  },
+  {
+    "id": 6,
+    "type": "note",
+    "content": "You are the heart of our family. ❤️ - Anthony",
+    "date": "2024-01-01"
+  },
+  {
+    "id": 7,
     "type": "note",
     "content": "Always grateful for your love and wisdom.",
     "date": "2024-02-14"

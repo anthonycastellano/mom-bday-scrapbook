@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 async function initApp() {
     try {
         const data = await fetchData(DATA_URL);
-        renderScrapbook(data);
+        const randomizedData = data.sort(() => Math.random() - 0.5);
+        renderScrapbook(randomizedData);
         initAnimations();
     } catch (error) {
         console.error('Error initializing scrapbook:', error);
     }
+    // ... rest of the function
         
     // Initialize AOS (Animate On Scroll)
     AOS.init({
