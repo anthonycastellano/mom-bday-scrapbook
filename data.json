@@ -148,6 +148,18 @@
     "caption": "Mom relaxing at the pool and soaking up the day. ☀️"
   },
   {
+    "id": 33,
+    "type": "photo",
+    "url": "assets/images/mom-hiking-waterfall.png",
+    "caption": "Mom out hiking with a waterfall behind her. 🥾"
+  },
+  {
+    "id": 34,
+    "type": "photo",
+    "url": "assets/images/mom-and-sisters-childhood.png",
+    "caption": "Mom as a little girl with her sisters. ❤️"
+  },
+  {
     "id": 6,
     "type": "note",
     "content": "You are the heart of our family. ❤️"
